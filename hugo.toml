@@ -2,6 +2,8 @@ baseURL = "https://harashuu.dev/"
 languageCode = "ja-jp"
 title = "harashuu.dev"
 theme = "PaperMod"
+hasCJKLanguage = true
+paginate = 10
 
 enableRobotsTXT = true
 
@@ -14,6 +16,19 @@ enableRobotsTXT = true
   ShowBreadCrumbs = true
   ShowToc = true
   TocOpen = true
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
 
 [menu]
   [[menu.main]]
