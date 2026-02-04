@@ -13,5 +13,5 @@ tags:
   - パッケージ管理
 series:
   - Python開発環境とuv
-draft: true
+draft: false
 ---
