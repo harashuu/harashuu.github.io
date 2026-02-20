@@ -89,7 +89,7 @@ uv --version
 という状況で、そのpythonファイルを動かしたいとします。
 詳しいシーン別の使い方は次の記事に書くとして、ここではサクッと実行する方法を見てみましょう。
 
-1. 外部ライブラリを使わないpythonファイルの場合
+1. 外部ライブラリを使わないpythonファイルの場合<br>
 例えば以下のような内容の`no_external_library.py`があるとき、
 ```python
 print("Hello, world!!")
@@ -99,7 +99,7 @@ PowerShellまたはコマンドプロンプトで当該ファイルのある階�
 uv run no_external_library.py
 ```
 
-2. 外部ライブラリを使うpythonファイルの場合
+2. 外部ライブラリを使うpythonファイルの場合<br>
 例えば以下のような内容の`with_external_library.py`があるとき[^2]、
 ```python
 from rich import print
@@ -111,5 +111,5 @@ PowerShellまたはコマンドプロンプトで当該ファイルのある階�
 ```bash
 uv run --with rich with_external_library.py
 ```
-[^1]: 初めて実行するときには自動でPythonがインストールされます。```uv python list```で確認できます。
-[^2]: `rich`はコンソール出力を修飾するライブラリです
+[^1]: 初めて実行するときには自動でPythonがインストールされます。```uv python list```で確認可能です。
+[^2]: `rich`はコンソール出力を修飾する外部ライブラリです
