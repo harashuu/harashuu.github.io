@@ -7,6 +7,9 @@ hasCJKLanguage = true
 enableRobotsTXT = true
 
 [params]
+  [params.author]
+    name = "harashuu"
+    email = ""
   math = true
   defaultTheme = "auto"
   ShowReadingTime = true
